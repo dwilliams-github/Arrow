@@ -9,33 +9,89 @@
 import XCTest
 
 class ArrowUITests: XCTestCase {
-
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+        super.setUp()
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        XCUIApplication().launch()
     }
 
     func testExample() {
-        // UI tests must launch the application that they test.
+        //
+        // Test changing settings
+        //
         let app = XCUIApplication()
-        app.launch()
+        let settingsButton = app.buttons["Settings"]
+        let tablesQuery = app.tables
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        //
+        // Animation board
+        //
+        settingsButton.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.buttons["Board"]/*[[".cells[\"Board\"].buttons[\"Board\"]",".buttons[\"Board\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.buttons["Board number 2"]/*[[".cells[\"Board number 2\"].buttons[\"Board number 2\"]",".buttons[\"Board number 2\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["Settings"].buttons["Done"].tap()
+        
+        //
+        // Animation speed
+        //
+        settingsButton.tap()
+        let animationIntervalSlider = app.tables/*@START_MENU_TOKEN@*/.sliders["Animation interval"]/*[[".cells[\"Interval, Animation interval\"].sliders[\"Animation interval\"]",".sliders[\"Animation interval\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        animationIntervalSlider.swipeLeft()
+        app.navigationBars["Settings"].buttons["Done"].tap()
+
+        settingsButton.tap()
+        animationIntervalSlider.swipeRight()
+        app.navigationBars["Settings"].buttons["Done"].tap()
+
+        //
+        // Select theme
+        //
+        settingsButton.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.buttons["Theme"]/*[[".cells[\"Theme\"].buttons[\"Theme\"]",".buttons[\"Theme\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tablesQuery.buttons["Theme number 1"].tap()
+        app.navigationBars["Settings"].buttons["Done"].tap()
+
+        //
+        // Custom theme
+        //
+        settingsButton.tap()
+        let customizeButton = tablesQuery/*@START_MENU_TOKEN@*/.buttons["Customize…"]/*[[".cells[\"Customize…\"].buttons[\"Customize…\"]",".buttons[\"Customize…\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        customizeButton.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.buttons["Add Theme…"]/*[[".cells[\"Add Theme…\"].buttons[\"Add Theme…\"]",".buttons[\"Add Theme…\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.otherElements["Bulb On"]/*[[".cells.otherElements[\"Bulb On\"]",".otherElements[\"Bulb On\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.children(matching: .button).element.tap()
+        
+        let elementsQuery = app.scrollViews.otherElements
+        elementsQuery.otherElements["cyan blue 50"].tap()
+        
+        let closeButton = elementsQuery.buttons["close"]
+        closeButton.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.otherElements["Bulb Off"]/*[[".cells.otherElements[\"Bulb Off\"]",".otherElements[\"Bulb Off\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.children(matching: .button).element.tap()
+        elementsQuery.otherElements["gray 44"].tap()
+        closeButton.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.otherElements["Background"]/*[[".cells.otherElements[\"Background\"]",".otherElements[\"Background\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.children(matching: .button).element.tap()
+        elementsQuery.otherElements["dark cyan blue 18"].tap()
+        closeButton.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.otherElements["Control"]/*[[".cells.otherElements[\"Control\"]",".otherElements[\"Control\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.children(matching: .button).element.tap()
+        elementsQuery.otherElements["gray 84"].tap()
+        closeButton.tap()
+        app.navigationBars["New Theme"].buttons["Add"].tap()
+        
+        let settingsButton2 = app.navigationBars["Custom Themes"].buttons["Settings"]
+        settingsButton2.tap()
+        app.navigationBars["Settings"].buttons["Done"].tap()
+
+        settingsButton.tap()
+        customizeButton.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.buttons["Trash theme number 10"]/*[[".cells[\"Theme number 10, Trash theme number 10\"].buttons[\"Trash theme number 10\"]",".buttons[\"Trash theme number 10\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        settingsButton2.tap()
+        app.navigationBars["Settings"].buttons["Done"].tap()
     }
 
     func testLaunchPerformance() {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
             // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
+            measure(metrics: [XCTApplicationLaunchMetric(waitUntilResponsive: true)]) {
                 XCUIApplication().launch()
             }
         }

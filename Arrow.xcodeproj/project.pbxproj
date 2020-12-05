@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B622DA582572DD2400C5E06D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622DA572572DD2400C5E06D /* SettingsView.swift */; };
+		B622DA602576196B00C5E06D /* AnimatedArrowBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622DA5F2576196B00C5E06D /* AnimatedArrowBoardView.swift */; };
+		B622DA64257839D500C5E06D /* ArrowPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622DA63257839D500C5E06D /* ArrowPattern.swift */; };
+		B622DA682578433A00C5E06D /* ArrowGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622DA672578433A00C5E06D /* ArrowGeometry.swift */; };
+		B622DA6C25784FEB00C5E06D /* ArrowTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622DA6B25784FEB00C5E06D /* ArrowTheme.swift */; };
+		B622DA7025786A1100C5E06D /* DefaultPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622DA6F25786A1100C5E06D /* DefaultPatterns.swift */; };
+		B622DA762579706C00C5E06D /* DefaultThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622DA752579706C00C5E06D /* DefaultThemes.swift */; };
+		B622DA7A25798E3400C5E06D /* colors.sketch in Resources */ = {isa = PBXBuildFile; fileRef = B622DA7925798E3400C5E06D /* colors.sketch */; };
+		B622DA92257C3CAC00C5E06D /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = B622DA91257C3CAC00C5E06D /* LICENSE.md */; };
 		B64434E525605E3000F3A409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64434E425605E3000F3A409 /* AppDelegate.swift */; };
 		B64434E725605E3000F3A409 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64434E625605E3000F3A409 /* SceneDelegate.swift */; };
 		B64434E925605E3000F3A409 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64434E825605E3000F3A409 /* ContentView.swift */; };
@@ -14,6 +23,10 @@
 		B64434EE25605E3100F3A409 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64434ED25605E3100F3A409 /* Preview Assets.xcassets */; };
 		B64434F125605E3100F3A409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64434EF25605E3100F3A409 /* LaunchScreen.storyboard */; };
 		B64434FC25605E3100F3A409 /* ArrowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64434FB25605E3100F3A409 /* ArrowUITests.swift */; };
+		B64435092560637200F3A409 /* dims-arrowbd-trailer-folding.png in Resources */ = {isa = PBXBuildFile; fileRef = B64435072560637200F3A409 /* dims-arrowbd-trailer-folding.png */; };
+		B644350A2560637200F3A409 /* detail-prod-arrowbd-patterns-733x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B64435082560637200F3A409 /* detail-prod-arrowbd-patterns-733x1024.png */; };
+		B644350D2560CF0300F3A409 /* ArrowBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B644350C2560CF0300F3A409 /* ArrowBoardView.swift */; };
+		B644350F2561F19D00F3A409 /* ArrowSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B644350E2561F19D00F3A409 /* ArrowSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B622DA572572DD2400C5E06D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B622DA5F2576196B00C5E06D /* AnimatedArrowBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedArrowBoardView.swift; sourceTree = "<group>"; };
+		B622DA63257839D500C5E06D /* ArrowPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowPattern.swift; sourceTree = "<group>"; };
+		B622DA672578433A00C5E06D /* ArrowGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowGeometry.swift; sourceTree = "<group>"; };
+		B622DA6B25784FEB00C5E06D /* ArrowTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowTheme.swift; sourceTree = "<group>"; };
+		B622DA6F25786A1100C5E06D /* DefaultPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPatterns.swift; sourceTree = "<group>"; };
+		B622DA752579706C00C5E06D /* DefaultThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultThemes.swift; sourceTree = "<group>"; };
+		B622DA7925798E3400C5E06D /* colors.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = colors.sketch; sourceTree = "<group>"; };
+		B622DA91257C3CAC00C5E06D /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		B64434E125605E3000F3A409 /* Arrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64434E425605E3000F3A409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B64434E625605E3000F3A409 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +60,11 @@
 		B64434F725605E3100F3A409 /* ArrowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64434FB25605E3100F3A409 /* ArrowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowUITests.swift; sourceTree = "<group>"; };
 		B64434FD25605E3100F3A409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B64435072560637200F3A409 /* dims-arrowbd-trailer-folding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dims-arrowbd-trailer-folding.png"; sourceTree = "<group>"; };
+		B64435082560637200F3A409 /* detail-prod-arrowbd-patterns-733x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail-prod-arrowbd-patterns-733x1024.png"; sourceTree = "<group>"; };
+		B644350B2560638D00F3A409 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B644350C2560CF0300F3A409 /* ArrowBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowBoardView.swift; sourceTree = "<group>"; };
+		B644350E2561F19D00F3A409 /* ArrowSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +88,9 @@
 		B64434D825605E3000F3A409 = {
 			isa = PBXGroup;
 			children = (
+				B622DA91257C3CAC00C5E06D /* LICENSE.md */,
+				B644350B2560638D00F3A409 /* README.md */,
+				B64435062560635800F3A409 /* Docs */,
 				B64434E325605E3000F3A409 /* Arrow */,
 				B64434FA25605E3100F3A409 /* ArrowUITests */,
 				B64434E225605E3000F3A409 /* Products */,
@@ -86,6 +116,15 @@
 				B64434EF25605E3100F3A409 /* LaunchScreen.storyboard */,
 				B64434F225605E3100F3A409 /* Info.plist */,
 				B64434EC25605E3100F3A409 /* Preview Content */,
+				B644350C2560CF0300F3A409 /* ArrowBoardView.swift */,
+				B622DA5F2576196B00C5E06D /* AnimatedArrowBoardView.swift */,
+				B644350E2561F19D00F3A409 /* ArrowSettings.swift */,
+				B622DA572572DD2400C5E06D /* SettingsView.swift */,
+				B622DA63257839D500C5E06D /* ArrowPattern.swift */,
+				B622DA672578433A00C5E06D /* ArrowGeometry.swift */,
+				B622DA6B25784FEB00C5E06D /* ArrowTheme.swift */,
+				B622DA6F25786A1100C5E06D /* DefaultPatterns.swift */,
+				B622DA752579706C00C5E06D /* DefaultThemes.swift */,
 			);
 			path = Arrow;
 			sourceTree = "<group>";
@@ -105,6 +144,16 @@
 				B64434FD25605E3100F3A409 /* Info.plist */,
 			);
 			path = ArrowUITests;
+			sourceTree = "<group>";
+		};
+		B64435062560635800F3A409 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				B622DA7925798E3400C5E06D /* colors.sketch */,
+				B64435082560637200F3A409 /* detail-prod-arrowbd-patterns-733x1024.png */,
+				B64435072560637200F3A409 /* dims-arrowbd-trailer-folding.png */,
+			);
+			path = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +201,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "David Williams";
 				TargetAttributes = {
 					B64434E025605E3000F3A409 = {
@@ -188,7 +237,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64435092560637200F3A409 /* dims-arrowbd-trailer-folding.png in Resources */,
+				B622DA7A25798E3400C5E06D /* colors.sketch in Resources */,
 				B64434F125605E3100F3A409 /* LaunchScreen.storyboard in Resources */,
+				B622DA92257C3CAC00C5E06D /* LICENSE.md in Resources */,
+				B644350A2560637200F3A409 /* detail-prod-arrowbd-patterns-733x1024.png in Resources */,
 				B64434EE25605E3100F3A409 /* Preview Assets.xcassets in Resources */,
 				B64434EB25605E3100F3A409 /* Assets.xcassets in Resources */,
 			);
@@ -209,8 +262,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64434E525605E3000F3A409 /* AppDelegate.swift in Sources */,
+				B644350D2560CF0300F3A409 /* ArrowBoardView.swift in Sources */,
+				B622DA602576196B00C5E06D /* AnimatedArrowBoardView.swift in Sources */,
+				B622DA682578433A00C5E06D /* ArrowGeometry.swift in Sources */,
+				B622DA7025786A1100C5E06D /* DefaultPatterns.swift in Sources */,
 				B64434E725605E3000F3A409 /* SceneDelegate.swift in Sources */,
+				B622DA582572DD2400C5E06D /* SettingsView.swift in Sources */,
+				B644350F2561F19D00F3A409 /* ArrowSettings.swift in Sources */,
+				B622DA64257839D500C5E06D /* ArrowPattern.swift in Sources */,
+				B622DA762579706C00C5E06D /* DefaultThemes.swift in Sources */,
 				B64434E925605E3000F3A409 /* ContentView.swift in Sources */,
+				B622DA6C25784FEB00C5E06D /* ArrowTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +332,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -294,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -330,6 +393,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -348,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
