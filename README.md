@@ -12,7 +12,7 @@ Believe it or not, there is a bonafided standard for these things:
 Based in part on WANCO products.
 * See: https://www.wanco.com/product/weco-folding-frame-arrow-boards/
 * Dimensions (basically 1:2)
-   ![WANCO dimensions](dims-arrowbd-trailer-folding.png)
+   ![WANCO dimensions](Docs/dims-arrowbd-trailer-folding.png)
 * Some standard patterns
-  ![WANCO patterns](detail-prod-arrowbd-patterns-733x1024.png)
+  ![WANCO patterns](Docs/detail-prod-arrowbd-patterns-733x1024.png)
 
