@@ -5,7 +5,6 @@
 //  Created by David Williams on 11/14/20.
 //  Copyright © 2020 David Williams. All rights reserved.
 //
-
 import SwiftUI
 
 struct ContentView: View {

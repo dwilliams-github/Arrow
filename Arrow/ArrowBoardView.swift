@@ -18,8 +18,8 @@ struct ArrowBoardView: View {
             let width = geometry.BulbDiameter(enclosureSize: viewGeom.size)
 
             ZStack {
-                ForEach(0..<geometry.number){ seq in
-                    let loc = geometry.Position(bulb:seq, enclosureSize:viewGeom.size)
+                ForEach(0..<geometry.number) { seq in
+                    let loc = geometry.Position(bulb: seq, enclosureSize: viewGeom.size)
                     
                     Circle()
                         .fill(pattern.BulbIsLit(bulb: seq, tick: frame.tick) ? theme.onColor : theme.offColor)

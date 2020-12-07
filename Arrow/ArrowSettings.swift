@@ -5,7 +5,6 @@
 //  Created by David Williams on 11/15/20.
 //  Copyright © 2020 David Williams. All rights reserved.
 //
-
 import SwiftUI
 
 /**
@@ -81,10 +80,10 @@ struct CodableArrowTheme : Codable {
 
 
 /**
-Settings for an arrow board
+ Settings for an arrow board
  
-These values only change when the user makes a choice in the settings view
-*/
+ These values only change when the user makes a choice in the settings view
+ */
 class ArrowSettings: ObservableObject {
     let defaults = UserDefaults.standard
     
@@ -165,7 +164,7 @@ class ArrowSettings: ObservableObject {
         } else {
             themes = DefaultThemes.choices
         }
-        theme  = defaults.object(forKey: "theme") as? Int ?? 0
+        theme = defaults.object(forKey: "theme") as? Int ?? 0
     }
 }
 
