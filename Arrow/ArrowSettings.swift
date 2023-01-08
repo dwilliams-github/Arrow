@@ -13,7 +13,7 @@ import SwiftUI
  Unfortunately, Color is not Codable (in its current form).
  This is a workaround
  
- Note: as of iOS 14, UIColor is codable and directly convertable, so the code below
+ - Note: As of iOS 14, UIColor is codable and directly convertable, so the code below
  might not be an optimal solution
  */
 struct CodableColor : Codable {
@@ -22,10 +22,20 @@ struct CodableColor : Codable {
     var b: Double
     var alpha: Double
     
+    /**
+     Return equivalent Color
+     
+     - Returns: The swiftui Color
+     */
     func ToColor() -> Color {
         Color( .sRGB, red: r, green: g, blue: b, opacity: alpha )
     }
     
+    /**
+     Initialize from a swiftui Color
+     
+     - Parameter color: The associated swiftui Color
+     */
     init(_ color: Color) {
         var cgr: CGFloat = 0
         var cgg: CGFloat = 0
